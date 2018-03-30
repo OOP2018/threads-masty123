@@ -19,7 +19,7 @@ The threads use the counter to add and subtract values.
 |:------------------------|:-------------------|-----------------|
 | Unsynchronized counter  |  10,000,000        |    0.016599     |
 | Using ReentrantLock     |  10,000,000        |    1.067055     |
-| Syncronized method      |  10,000,000        |    1.023023     |
+| Synchronized method      |  10,000,000        |    1.023023     |
 | AtomicLong for total    |  10,000,000        |    0.213915     |
 
 ## 1. Using unsynchronized counter object
@@ -36,8 +36,7 @@ answer the questions (1.1 - 1.3)
 
 How might this affect real applications?  
 
-In Banking situation With multi-thread method, It will help people do more task at the same time like deposit, withdraw and transfer. That is why 
-the process can achieve without waiting for another process to start and execute.
+In Banking situation With multi-threaded method, It will help people do more task at the same time like deposit, withdraw and transfer. That is why the process can achieve without waiting for another process to start and execute.
 
 
 ## 3. Counter with ReentrantLock
