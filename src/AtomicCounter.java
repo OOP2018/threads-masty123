@@ -12,8 +12,8 @@ public class AtomicCounter extends Counter {
 	
 	/** subtract amount to the total. */
 	public void subtract(int amount) {
-		long oldTotal = total.longValue();
-		total.getAndSet(oldTotal - amount);
+		total.getAndAdd(-amount);
+
 	}
 	/** return the total as a long value. */
 	public long get() {
