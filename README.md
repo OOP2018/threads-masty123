@@ -46,9 +46,7 @@ the process can achieve without waiting for another process to start and execute
 
 3.2 Because the thread wait for each other to run so the result will always be the same.
 
-3.3 ReentrantLock is like a light traffic of the threads. It will tell a thread that there is another thread running or not. so, that thread will stay  after another thread is done. 
-
-The reason that we use ReentrantLock is because to make the thread not interrupt each other.
+3.3 ReentrantLock is like a light traffic of the threads. It will tell a thread that there is another thread running or not. so, that thread will stay  after another thread is done. The reason that we use ReentrantLock is because to make the thread not interrupt each other.
 
 3.4 Because if an exception gets thrown no code after the try block is executed unless the exception is caught. A finally block is always executed no matter what happen in your try block
 
