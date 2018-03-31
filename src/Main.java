@@ -1,4 +1,8 @@
-
+/**
+ * test thread
+ * @author Theeruth Borisuth
+ *
+ */
 public class Main {
 	public static void main(String[] args) {
 		Counter acc = new Counter();

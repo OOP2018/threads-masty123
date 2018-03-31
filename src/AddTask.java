@@ -1,6 +1,7 @@
 
 /**
  * AddTask adds number 1 ... limit to the counter, then exits.
+ * @author Theeruth Boris
  */
 public class AddTask implements Runnable {
 	private Counter counter;

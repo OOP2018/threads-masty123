@@ -1,6 +1,10 @@
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
-
+/**
+ * Count numbers with lock
+ * @author Theeruth Borisuth
+ *
+ */
 public class CounterWithLock extends Counter {
 	/**lock variable**/
 	private Lock lock = new ReentrantLock();

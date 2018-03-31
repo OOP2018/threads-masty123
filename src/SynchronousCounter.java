@@ -1,4 +1,8 @@
-
+/**
+ *  Count numbers by using Synchronized method
+ * @author Theeruth Borisuth
+ *
+ */
 public class SynchronousCounter extends Counter {
 	@Override
 	public synchronized void add(int amount) {

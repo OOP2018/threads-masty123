@@ -1,5 +1,9 @@
 import java.util.concurrent.atomic.AtomicLong;
-
+/**
+ * Count numbers by using AtomicLong 
+ * @author Theeruth Borisuth
+ *
+ */
 public class AtomicCounter extends Counter {
 	private AtomicLong total;
 	public AtomicCounter() {

@@ -19,7 +19,7 @@ The threads use the counter to add and subtract values.
 |:------------------------|:-------------------|-----------------|
 | Unsynchronized counter  |  10,000,000        |    0.016599     |
 | Using ReentrantLock     |  10,000,000        |    1.067055     |
-| Synchronized method      |  10,000,000        |    1.023023     |
+| Synchronized method     |  10,000,000        |    1.023023     |
 | AtomicLong for total    |  10,000,000        |    0.213915     |
 
 ## 1. Using unsynchronized counter object
@@ -60,7 +60,7 @@ In Banking situation With multi-threaded method, It will help people do more tas
 
 ## 5. Counter with AtomicLong
 
-5.1)  It minimize load, change and replace so very small that you cannot call method at the same time.
+5.1)  It is the safest thread for long.
 
 5.2) Class implement because AtomLong will minimize load, change and replace it very small that you cannot call method at the same time. We should use when the program has more than one thread using the same resource
 
@@ -71,4 +71,13 @@ In Banking situation With multi-threaded method, It will help people do more tas
 6.2) Synchronized, because it can use flexible, efficient and less runtime than other methods.
 
 ## 7. Using Many Threads (optional)
+
+| Counter class           | Limit              | Runtime (sec)   |
+|:------------------------|:-------------------|-----------------|
+| Unsynchronized counter  |  10,000,000        |    0.051196     |
+| Using ReentrantLock     |  10,000,000        |    3.624463     |
+| Synchronized method     |  10,000,000        |    5.986340     |
+| AtomicLong for total    |  10,000,000        |    2.693380     |
+
+Result : If not count unsynchronized counter, AtomicLong is the fastest and Synchronized is the slowest.
 
